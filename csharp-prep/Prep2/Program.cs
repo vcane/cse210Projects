@@ -14,9 +14,13 @@ class Program
     {
       sign = "+";
     }
-    if (gradePercentage.EndsWith("2") || gradePercentage.EndsWith("1") || gradePercentage.EndsWith("0"))
+    else if (gradePercentage.EndsWith("2") || gradePercentage.EndsWith("1") || gradePercentage.EndsWith("0"))
     {
       sign = "-";
+    }
+    else
+    {
+      sign = "";
     }
 
     if (gradePercentageNum >= 90)
@@ -39,57 +43,13 @@ class Program
     {
       finalGrade = "F";
     }
-    Console.WriteLine($"Your final letter grade is {finalGrade}{sign}.");
 
-    // if (gradePercentageNum >= 93)
-    // {
-    //   finalGrade = "A";
-    // }
-    // else if (gradePercentageNum >= 90)
-    // {
-    //   finalGrade = "A-";
-    // }
-    // else if (gradePercentageNum >= 87)
-    // {
-    //   finalGrade = "B+";
-    // }
-    // else if (gradePercentageNum >= 83)
-    // {
-    //   finalGrade = "B";
-    // }
-    // else if (gradePercentageNum >= 80)
-    // {
-    //   finalGrade = "B-";
-    // }
-    // else if (gradePercentageNum >= 77)
-    // {
-    //   finalGrade = "C+";
-    // }
-    // else if (gradePercentageNum >= 73)
-    // {
-    //   finalGrade = "C";
-    // }
-    // else if (gradePercentageNum >= 70)
-    // {
-    //   finalGrade = "C-";
-    // }
-    // else if (gradePercentageNum >= 67)
-    // {
-    //   finalGrade = "D+";
-    // }
-    // else if (gradePercentageNum >= 63)
-    // {
-    //   finalGrade = "D";
-    // }
-    // else if (gradePercentageNum >= 60)
-    // {
-    //   finalGrade = "D-";
-    // }
-    // else
-    // {
-    //   finalGrade = "F";
-    // }
-    //Console.WriteLine($"Your final letter grade is {finalGrade}.");
+    if (gradePercentageNum >= 93 || gradePercentageNum < 60)
+    {
+      sign = "";
+    }
+
+    Console.WriteLine($"Your final letter grade is {finalGrade}{sign}.");
     if (gradePercentageNum >= 70)
     {
       Console.WriteLine("Congratulations, you passed the class!");
