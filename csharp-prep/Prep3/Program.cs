@@ -4,29 +4,47 @@ class Program
 {
   static void Main(string[] args)
   {
-    Console.Write("Please enter the magic number as an integer 1-10: ");
-    string magic = Console.ReadLine();
-    int magicNum = int.Parse(magic);
-    int guessNum;
+    string play = "yes";
 
-    do
+    while (play == "yes")
     {
-      Console.Write("Please enter an integer 1-10: ");
-      string guess = Console.ReadLine();
-      guessNum = int.Parse(guess);
+      Random randomNum = new Random();
+      int magicNum = randomNum.Next(1, 101);
+      int guessNum;
+      int counter = 0;
+      Console.WriteLine(magicNum);
+      do
+      {
+        counter++;
+        Console.Write("Please enter an integer 1-100: ");
+        string guess = Console.ReadLine();
+        guessNum = int.Parse(guess);
 
-      if (magicNum < guessNum)
-      {
-        Console.WriteLine("Your guess is too high!");
-      }
-      else if (magicNum > guessNum)
-      {
-        Console.WriteLine("Your guess is too low!");
-      }
-      else
-      {
-        Console.WriteLine($"Congratulations, {guessNum} was the correct number!");
-      }
-    } while (guessNum != magicNum);
+        if (magicNum < guessNum)
+        {
+          Console.WriteLine("Your guess is too high!");
+        }
+        else if (magicNum > guessNum)
+        {
+          Console.WriteLine("Your guess is too low!");
+        }
+        else
+        {
+          Console.WriteLine($"Congratulations, {guessNum} was the correct number!.");
+          if (counter == 1)
+          {
+            Console.WriteLine($"It took {counter} attempt.");
+          }
+          else
+          {
+            Console.WriteLine($"It took {counter} attempts.");
+          }
+        }
+
+      } while (guessNum != magicNum);
+      Console.Write("Would you like to play again? ");
+      play = Console.ReadLine();
+    }
+    Console.WriteLine("Come play again sometime!");
   }
 }
