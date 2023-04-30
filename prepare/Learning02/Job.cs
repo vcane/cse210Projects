@@ -10,12 +10,6 @@ public class Job
   public int startYear;
   public int endYear;
 
-  // A special method, called a constructor that is invoked using the  
-  // new keyword followed by the class name and parentheses.
-  // public Job()
-  // {
-  // }
-
   //method
   public void Display()
   {
