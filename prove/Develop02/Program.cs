@@ -7,7 +7,7 @@ class Program
     Console.WriteLine("Welcome to Your Daily Journal!");
 
     bool repeat = true;
-
+    Journal journal = new Journal();
     while (repeat == true)
     {
       Console.WriteLine("Please select a number from the menu below.");
@@ -21,31 +21,33 @@ class Program
 
       Console.Write("What would you like to do? ");
       string userSelection = Console.ReadLine();
+
       if (userSelection == "1")
       {
         //call write an entry method
+
+        journal.AddEntry();
       }
       else if (userSelection == "2")
       {
         //call display your entries method
+        journal.DisplayJournal();
       }
       else if (userSelection == "3")
       {
         //call load your journal method
+        journal.LoadJournal();
       }
       else if (userSelection == "4")
       {
         //call save your journal method
+        journal.SaveJournal();
       }
       else
       {
         repeat = false;
         Console.WriteLine("Exiting program, goodbye.");
       }
-
     }
-
-
-
   }
 }

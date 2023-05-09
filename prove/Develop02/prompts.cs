@@ -21,6 +21,7 @@ public class PromptHandler
   {
     Random randomNum = new Random();
     int promptIndex = randomNum.Next(0, 10);
+
     return _prompts[promptIndex];
   }
 }
