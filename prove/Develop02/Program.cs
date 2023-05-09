@@ -4,7 +4,7 @@ class Program
 {
   static void Main(string[] args)
   {
-    Console.WriteLine("Welcome to Your Daily Journal!");
+    Console.WriteLine("Welcome to Your Daily Journal!" + "\n");
 
     bool repeat = true;
     Journal journal = new Journal();
@@ -17,10 +17,12 @@ class Program
             3. Load your journal
             4. Save your journal
             5. Quit
+            
             """);
 
       Console.Write("What would you like to do? ");
       string userSelection = Console.ReadLine();
+      Console.WriteLine(" ");
 
       if (userSelection == "1")
       {
