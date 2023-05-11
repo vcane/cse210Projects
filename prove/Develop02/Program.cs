@@ -1,5 +1,3 @@
-using System;
-
 class Program
 {
   static void Main(string[] args)
@@ -8,6 +6,7 @@ class Program
 
     bool repeat = true;
     Journal journal = new Journal();
+    SaveJson saveJson = new SaveJson();
     while (repeat == true)
     {
       Console.WriteLine("Please select a number from the menu below.");
@@ -26,24 +25,20 @@ class Program
 
       if (userSelection == "1")
       {
-        //call write an entry method
-
         journal.AddEntry();
       }
       else if (userSelection == "2")
       {
-        //call display your entries method
         journal.DisplayJournal();
       }
       else if (userSelection == "3")
       {
-        //call load your journal method
         journal.LoadJournal();
       }
       else if (userSelection == "4")
       {
-        //call save your journal method
-        journal.SaveJournal();
+        // journal.SaveJournal();
+        saveJson.SaveJsonFile(journal._entries);
       }
       else
       {

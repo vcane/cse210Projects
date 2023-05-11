@@ -1,8 +1,5 @@
-using System;
-
 public class PromptHandler
 {
-  // attributes
   public List<string> _prompts = new List<string>()
   {
     "Who was the most interesting person I interacted with today?",

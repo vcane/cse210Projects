@@ -1,5 +1,3 @@
-using System;
-
 public class Entry
 {
 
@@ -13,6 +11,7 @@ public class Entry
     {_date}
     {_prompt}
     {_response}
+    
     """);
   }
 }
