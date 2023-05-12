@@ -6,7 +6,6 @@ class Program
 
     bool repeat = true;
     Journal journal = new Journal();
-    SaveJson saveJson = new SaveJson();
     while (repeat == true)
     {
       Console.WriteLine("Please select a number from the menu below.");
@@ -37,8 +36,7 @@ class Program
       }
       else if (userSelection == "4")
       {
-        // journal.SaveJournal();
-        saveJson.SaveJsonFile(journal._entries);
+        journal.SaveJournal();
       }
       else
       {
