@@ -38,7 +38,7 @@ class Program
       else if (userSelection == "4")
       {
         journal.SaveJournal();
-        saveJson.SaveJsonFile(journal._entries);
+        //saveJson.SaveJsonFile(journal._entries);
       }
       else
       {
