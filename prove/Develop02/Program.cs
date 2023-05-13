@@ -4,9 +4,10 @@ class Program
   {
     Console.WriteLine("Welcome to Your Daily Journal!" + "\n");
 
-    bool repeat = true;
     Journal journal = new Journal();
     SaveJson saveJson = new SaveJson();
+
+    bool repeat = true;
     while (repeat == true)
     {
       Console.WriteLine("Please select a number from the menu below.");
@@ -21,6 +22,7 @@ class Program
 
       Console.Write("What would you like to do? ");
       string userSelection = Console.ReadLine();
+
       Console.WriteLine(" ");
 
       if (userSelection == "1")

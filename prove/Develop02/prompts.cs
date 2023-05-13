@@ -1,6 +1,6 @@
 public class PromptHandler
 {
-  public List<string> _prompts = new List<string>()
+  public List<string> prompts = new List<string>()
   {
     "Who was the most interesting person I interacted with today?",
     "What was the best part of my day?",
@@ -19,6 +19,6 @@ public class PromptHandler
     Random randomNum = new Random();
     int promptIndex = randomNum.Next(0, 10);
 
-    return _prompts[promptIndex];
+    return prompts[promptIndex];
   }
 }
