@@ -1,5 +1,5 @@
 ﻿using System;
-
+//useless comment for push test
 public class Fraction
 {
   private int _top;
