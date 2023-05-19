@@ -5,6 +5,12 @@ class Program
 {
   static void Main(string[] args)
   {
+    // Getter and Setter to write 1/2 to console
+    Fraction getSet = new Fraction();
+    getSet.SetTop(1);
+    getSet.SetBottom(2);
+    Console.WriteLine($"{getSet.GetTop()}/{getSet.GetBottom()}");
+
     Fraction f1 = new Fraction();
     Console.WriteLine(f1.GetFractionString());
     Console.WriteLine(f1.GetDecimalValue());
