@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Program">
+    <Position X="5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Develop03.Scripture">
+    <Position X="0.5" Y="4.25" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAARAAABAAAgAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Scripture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Develop03.Word">
+    <Position X="9" Y="4.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAEAQAAAAAAAAABAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Word.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Develop03.FileHelper">
+    <Position X="4.5" Y="2.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAABAAAAAAABAA=</HashCode>
+      <FileName>FileHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Develop03.Reference">
+    <Position X="4.5" Y="4.25" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAACAAEAAAAAAAAAAAQAAAAAABAAAAEAAAAAQAAA=</HashCode>
+      <FileName>Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Develop03.ScriptureLibrary">
+    <Position X="7" Y="1.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAQBA=</HashCode>
+      <FileName>ScriptureLibrary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
